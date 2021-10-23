@@ -1,0 +1,86 @@
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-size: 24px;
+}
+.container {
+  display: flex;
+  min-height: 100%;
+}
+.main {
+  background-color: #f8edeb;
+  flex-grow: 1;
+  order: 2;
+}
+.menu {
+  background-color: #fae1dd;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 15%;
+}
+.menu {
+  order: 1;
+}
+header,
+.menu,
+.main {
+  text-align: center;
+  padding: 20px;
+}
+header {
+  background-color: #e8e8e4;
+  height: 30px;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  padding-left: 0;
+}
+.menu li:hover {
+  background-color: #f8edeb;
+}
+.add:hover {
+  cursor: not-allowed;
+}
+.main ul li {
+  text-align: left;
+}
+.main ul {
+  padding-left: 100px;
+}
+input {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+.add {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+.add:hover {
+  font-weight: bold;
+}
+.add ul {
+  position: absolute;
+  visibility: hidden;
+}
+.add:hover ul {
+  visibility: visible;
+}
+.add li {
+  background-color: #f8edeb;
+}
+.add li:hover {
+  background-color: #e8e8e4;
+}
+/*# sourceMappingURL=style.css.map */
