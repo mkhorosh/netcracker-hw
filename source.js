@@ -4,6 +4,7 @@ function calculateTop() {
         alert('Please enter text :)');
     } else {
         // remove special symbols, don't mind register
+        str = str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
         str = str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
         let wordsArray = str.split(' ');
         let dictionary = {};
