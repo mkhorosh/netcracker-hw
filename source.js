@@ -4,8 +4,9 @@ function calculateTop() {
         alert('Please enter text :)');
     } else {
         // remove special symbols, don't mind register
+        str = str.replace(/\n/g,' ');
+        str = str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g, " ").toLowerCase();
         str = str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-        str = str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
         let wordsArray = str.split(' ');
         let dictionary = {};
         for (let word of wordsArray) {
@@ -20,7 +21,7 @@ function calculateTop() {
             let keys = Object.keys(dictionary).filter(k => dictionary[k] === maxs[i]);
             answerString +='\n'+'Top ' + (+i + 1) + ':'+'\n';
             for (let elem of keys) {
-                answerString+=elem + '  ';
+                answerString+=elem + '    ';
             }
             answerString+='\n'+'(' + maxs[i] + ' times)';
         }
