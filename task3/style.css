@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+h1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #e9d8a6;
+}
+label {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #005f73;
+  font-size: large;
+  vertical-align: top;
+  margin-left: 15px;
+}
+textarea {
+  background-color: #f3eacf;
+  width: 500px;
+  height: 400px;
+  margin-left: 15px;
+}
+html {
+  background-color: #e9d8a6;
+}
+header {
+  background-color: #005f73;
+  padding: 20px;
+}
+input {
+  background-color: #005f73;
+  color: #e9d8a6;
+  margin-left: 577px;
+}
+/*# sourceMappingURL=style.css.map */
